@@ -50,7 +50,9 @@
   section{padding:60px 0}
   h2{font-size:1.9rem;color:var(--green-900);margin-bottom:8px}
   .lede{color:var(--muted);max-width:640px;margin-bottom:34px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}}
   .card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--green-600);border-radius:10px;padding:24px 22px;box-shadow:0 2px 8px rgba(20,20,16,.07)}
   .card h3{font-size:1.18rem;color:var(--green-900);margin-bottom:10px}
   .card ul{list-style:none}
